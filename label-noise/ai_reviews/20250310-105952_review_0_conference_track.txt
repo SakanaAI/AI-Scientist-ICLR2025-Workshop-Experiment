@@ -1,0 +1,37 @@
+{
+    "Summary": "This paper investigates the impact of label noise on model calibration in deep learning models. The authors systematically analyze how different types and levels of label noise affect calibration metrics like Expected Calibration Error (ECE) and reliability diagrams. The study utilizes synthetic label noise on benchmark datasets (CIFAR-10, MNIST, and Fashion-MNIST) and evaluates existing label noise mitigation techniques such as temperature scaling.",
+    "Strengths": [
+        "Addresses an important and underexplored issue in deep learning: the impact of label noise on model calibration.",
+        "Systematic and thorough experimental analysis across multiple datasets and noise levels.",
+        "Clear presentation of results with well-organized figures and tables.",
+        "Provides clear evidence that label noise exacerbates miscalibration, which is crucial for risk-sensitive applications."
+    ],
+    "Weaknesses": [
+        "Lacks novelty in terms of proposed methods; the paper primarily analyzes existing phenomena without introducing new techniques or solutions.",
+        "Limited contribution beyond confirming existing knowledge about the detrimental impact of label noise on calibration.",
+        "The evaluation of mitigation techniques is shallow, and no novel methods are proposed to address the identified issues.",
+        "Some references and attributions (e.g., datasets) are missing or incorrectly cited with placeholders (e.g., ?) which impacts the credibility of the work.",
+        "The paper does not explore more advanced or novel mitigation techniques that could potentially address calibration under noisy conditions."
+    ],
+    "Originality": 2,
+    "Quality": 3,
+    "Clarity": 3,
+    "Significance": 2,
+    "Questions": [
+        "Can the authors provide more details on the noise injection process and the dataset splits?",
+        "Have the authors considered any advanced or novel mitigation techniques beyond standard ones like temperature scaling?",
+        "What specific aspects of current techniques lead to their inadequacy in improving calibration under noisy labels?",
+        "Can the authors elaborate on potential new directions or methods to address the calibration issues identified?"
+    ],
+    "Limitations": [
+        "The study primarily focuses on existing techniques and lacks exploration of novel approaches for mitigating the impact of label noise on model calibration.",
+        "The potential real-world implications of deploying miscalibrated models are not thoroughly discussed."
+    ],
+    "Ethical Concerns": false,
+    "Soundness": 3,
+    "Presentation": 3,
+    "Contribution": 2,
+    "Overall": 4,
+    "Confidence": 4,
+    "Decision": "Reject"
+}

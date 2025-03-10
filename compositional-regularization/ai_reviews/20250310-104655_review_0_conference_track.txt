@@ -1,0 +1,36 @@
+{
+    "Summary": "The paper introduces a compositional regularization term to enhance compositional generalization in neural networks. Despite thorough experimentation on synthetic arithmetic datasets, the results show that the proposed regularization does not significantly improve generalization and sometimes even hinders learning. The paper explores the effects of operator complexity and different hyperparameters, providing insights into the challenges of enforcing compositional structures in neural networks.",
+    "Strengths": [
+        "Addresses an important issue in neural networks: compositional generalization.",
+        "Thorough experimental setup and analysis, including multiple ablation studies and exploration of hyperparameters.",
+        "Honest and detailed reporting of negative results, which is valuable for the research community."
+    ],
+    "Weaknesses": [
+        "The proposed method did not yield significant improvements, limiting its contributions to advancing the state of the art.",
+        "The paper could benefit from a deeper exploration of why the regularization approach failed and potential alternative strategies.",
+        "Some methodological details, particularly regarding the compositional regularization term, lack clarity.",
+        "The results are based on synthetic datasets, which may not fully capture the complexities of real-world tasks."
+    ],
+    "Originality": 2,
+    "Quality": 2,
+    "Clarity": 3,
+    "Significance": 2,
+    "Questions": [
+        "Can the authors provide more insights into why the compositional regularization approach did not yield the expected results?",
+        "Are there any potential alternative strategies that the authors plan to explore based on the findings of this work?",
+        "Can the authors provide more details on the implementation of the compositional regularization term? Specifically, how are the hidden states calculated and compared?",
+        "How does this work significantly differ from previous attempts at enhancing compositional generalization?",
+        "Have you considered testing on more complex and real-world datasets to validate your findings?"
+    ],
+    "Limitations": [
+        "The paper acknowledges the limitations of the proposed approach and the challenges of enhancing compositional generalization through regularization.",
+        "The study reveals that compositional regularization may conflict with the primary learning objective, which reduces the model's ability to fit the training data. The approach may also not align with the aspects of compositionality critical for generalization."
+    ],
+    "Ethical Concerns": false,
+    "Soundness": 2,
+    "Presentation": 3,
+    "Contribution": 2,
+    "Overall": 3,
+    "Confidence": 4,
+    "Decision": "Reject"
+}

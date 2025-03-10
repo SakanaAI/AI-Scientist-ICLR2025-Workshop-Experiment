@@ -1,0 +1,37 @@
+{
+    "Summary": "The paper investigates the challenge of enhancing compositional generalization in neural networks by introducing a compositional regularization term into the training loss. The authors hypothesized that this would encourage the network to form compositional representations, thereby improving generalization to unseen combinations of arithmetic expressions. However, the experiments revealed that compositional regularization did not lead to the expected improvements and, in some cases, hindered the learning process. The paper provides a thorough analysis of these unexpected outcomes and discusses potential reasons for the failure.",
+    "Strengths": [
+        "Addresses a significant problem in neural network generalization, specifically compositional generalization.",
+        "Proposes a novel approach with a compositional regularization term.",
+        "Methodologically rigorous with well-designed experiments and thorough analysis.",
+        "Transparent about negative results, providing valuable insights for future research.",
+        "Well-written and clearly organized, making it easy to follow the arguments and understand the findings."
+    ],
+    "Weaknesses": [
+        "The proposed method did not achieve the expected improvements in generalization.",
+        "Limited to synthetic arithmetic expression datasets, which may not capture the complexities of real-world tasks.",
+        "Could benefit from exploring additional regularization strategies or alternative definitions of compositionality.",
+        "Theoretical justification for the compositional regularization term could be elaborated more thoroughly."
+    ],
+    "Originality": 3,
+    "Quality": 3,
+    "Clarity": 4,
+    "Significance": 4,
+    "Questions": [
+        "Can the authors provide more detail on the choice of the compositional regularization term (\u03bb) and its tuning process?",
+        "Have the authors considered any alternative regularization strategies or modifications to address the failure of the proposed regularization term?",
+        "Have the authors considered testing their approach on more diverse datasets to validate their findings?",
+        "What specific directions do the authors suggest for future research in enhancing compositional generalization in neural networks?"
+    ],
+    "Limitations": [
+        "The authors have addressed the limitations and potential negative outcomes of their work quite well, discussing possible reasons for the observed negative results. However, they could further enhance the paper by exploring and reporting on alternative strategies.",
+        "The study is limited to synthetic datasets, which may affect the generalizability of the findings. Further exploration of alternative regularization strategies or architectural changes could strengthen the conclusions."
+    ],
+    "Ethical Concerns": false,
+    "Soundness": 3,
+    "Presentation": 3,
+    "Contribution": 3,
+    "Overall": 7,
+    "Confidence": 4,
+    "Decision": "Accept"
+}

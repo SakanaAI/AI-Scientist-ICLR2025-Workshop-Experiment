@@ -1,0 +1,49 @@
+{
+    "Summary": "The paper investigates the impact of label noise on model calibration in deep learning. Through controlled experiments on benchmark datasets (CIFAR-10, MNIST, Fashion-MNIST) with synthetic label noise, the study reveals that label noise, particularly asymmetric noise, leads to overconfident and miscalibrated predictions. The effectiveness of existing label noise mitigation techniques is evaluated, showing limited improvements, thus highlighting the need for new methods to enhance model reliability despite noisy labels.",
+    "Strengths": [
+        "The paper addresses a significant and underexplored issue in deep learning: the impact of label noise on model calibration.",
+        "The methodology is rigorous, involving controlled experiments on standard datasets.",
+        "The findings are novel and important, revealing the detrimental impact of label noise on model calibration.",
+        "The paper is well-organized and clearly written.",
+        "The study provides comprehensive experimentation, including the use of controlled synthetic label noise and evaluation of calibration metrics like ECE and reliability diagrams."
+    ],
+    "Weaknesses": [
+        "The study is limited to three datasets (CIFAR-10, MNIST, and Fashion-MNIST), which may not be representative of all real-world scenarios.",
+        "The paper evaluates only a few standard mitigation techniques, and more advanced methods could be explored.",
+        "The discussion on potential negative societal impacts is limited.",
+        "The methodology section lacks detailed explanations, particularly regarding the injection of synthetic label noise and the training procedure.",
+        "The paper could benefit from additional ablation studies, for example, varying the training procedures or model architectures to see if the findings hold."
+    ],
+    "Originality": 3,
+    "Quality": 3,
+    "Clarity": 3,
+    "Significance": 4,
+    "Questions": [
+        "Can the authors provide more details on why asymmetric noise has a more pronounced effect on calibration?",
+        "What other datasets could be included to generalize the findings further?",
+        "Are there any plans to explore more advanced mitigation techniques in future work?",
+        "Can the authors provide more detailed visualizations and explanations of the calibration curves and reliability diagrams?",
+        "Have the authors considered evaluating more recent noise mitigation techniques that may have been proposed after the cited studies?",
+        "Could the authors discuss the potential societal impact of deploying miscalibrated models in real-world applications?",
+        "Can you provide more details on the autoencoder aggregator used in the experiments?",
+        "Have you considered other calibration techniques beyond temperature scaling and label smoothing, and what were the results?",
+        "Could you include more qualitative examples, such as additional reliability diagrams, to illustrate the impact of label noise on calibration?",
+        "Could you provide more details on the configurations of the noise mitigation techniques used in the experiments?",
+        "Have you considered varying the training procedures or model architectures to see if the findings hold?",
+        "How does the synthetic noise model used in your experiments compare to real-world label noise?"
+    ],
+    "Limitations": [
+        "The study is focused on a limited number of datasets, which may not cover all real-world scenarios.",
+        "The evaluation of mitigation techniques could be expanded to include more advanced methods.",
+        "The synthetic noise model may not fully capture the complexities of real-world label noise, which could limit the generalizability of the findings.",
+        "The paper does not provide extensive details on the configurations of the noise mitigation techniques, which could affect reproducibility.",
+        "There is limited discussion on the practical implications and computational overhead of the evaluated mitigation techniques."
+    ],
+    "Ethical Concerns": false,
+    "Soundness": 3,
+    "Presentation": 3,
+    "Contribution": 3,
+    "Overall": 7,
+    "Confidence": 4,
+    "Decision": "Accept"
+}
