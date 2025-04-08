@@ -32,11 +32,10 @@ We have personally reviewed these papers and their experimental results, but we 
 
 ## Citing the Experiment
 
-```
-@article{iclr2025aiscientist,
-  title={The AI Scientist Generates its First Peer-Reviewed Scientific Publication},
-  author={The AI Scientist Team},
-  journal={https://sakana.ai/ai-scientist-first-publication},
+<pre><code>@article{aiscientistv22025,
+  title={The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search},
+  author={Yamada, Yutaro and Lange, Robert Tjarko and Lu, Cong and Hu, Shengran and Foerster, Jakob and Clune, Jeff and Ha, David},
+  journal={https://pub.sakana.ai/ai-scientist-v2/paper},
   year={2025}
 }
-```
+</code></pre>
